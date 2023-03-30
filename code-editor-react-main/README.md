@@ -13,10 +13,5 @@ Working
 2. Generate API Keys for Judge0 (Rapid API) and store in a .env file
 3. npm start
 
-Tutorial Used
------
-https://www.freecodecamp.org/news/how-to-build-react-based-code-editor/
 
-Added Functionality
------
-Google sign-in with Firebase Authentication.
+
