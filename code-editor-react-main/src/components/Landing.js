@@ -105,22 +105,7 @@ const Landing = () => {
         const token = response.data.token;
         checkStatus(token);
       })
-      .catch((err) => {
-        let error = err.response ? err.response.data : err;
-        // get error status
-        let status = err.response.status;
-        console.log("status", status);
-        if (status === 429) {
-          console.log("too many requests", status);
-
-          showErrorToast(
-            `Quota of 100 requests exceeded for the Day! Please read the blog on freeCodeCamp to learn how to setup your own RAPID API Judge0!`,
-            10000
-          );
-        }
-        setProcessing(false);
-        console.log("catch block...", error);
-      });
+ 
   };
 
   const checkStatus = async (token) => {
